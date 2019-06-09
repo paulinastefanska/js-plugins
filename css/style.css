@@ -12,17 +12,8 @@ html { overflow-y: scroll; }
 
 .container { position: relative; bottom: 50px; width: 100%; max-width: 1200px; margin: 0 auto; }
 
-/*.button {
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    right: 40px;
-    cursor: pointer;
-    border-radius: 10px;
-    outline: none;
-}*/
-.button { position: absolute; z-index: 1; top: 30px; right: 40px; cursor: pointer; outline: none; height: 30px; width: 120px; border: 4px solid #ffa502; border-radius: 15px; font-family: "Lato", sans-serif; font-weight: bold; font-size: 15px; /*background : { image: linear-gradient(90deg, $orange 50%, transparent 50%);  color: inherit; position: 100% 0; size: 300%; } transition: 0.4s; &:hover { background-position: 0 100%; color: #fff; }*/ background: #ffa502; color: #fff; }
+.button { position: absolute; z-index: 1; top: 30px; right: 40px; cursor: pointer; outline: none; height: 30px; width: 120px; border: 4px solid #ffa502; border-radius: 15px; background: #ffa502; color: #fff; font-family: "Lato", sans-serif; font-weight: bold; font-size: 15px; }
 
-.progress-bar { width: 0; height: 20px; background: #333; }
+.progress-bar { width: 0; height: 20px; background: #ffa502; }
 
 @media screen and (min-width: 768px) { .carousel-cell img { height: 400px; } }
