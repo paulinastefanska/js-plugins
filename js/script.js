@@ -4,7 +4,7 @@ var flkty = new Flickity( carousel, {
   percentPosition: false,
 });
 
-var imgs = carousel.querySelectorAll('.carousel-cell img');
+var imgs = carousel.querySelectorAll('.carousel-cell');
 // get transform property
 var docStyle = document.documentElement.style;
 var transformProp = typeof docStyle.transform == 'string' ?

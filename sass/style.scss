@@ -2,14 +2,6 @@
 
 body { font-family: sans-serif; }
 
-.container {
-    position: relative;
-    bottom: 50px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .carousel {
   background: #EEE;
 }
@@ -17,18 +9,20 @@ body { font-family: sans-serif; }
 .carousel-cell {
     display: flex;
     width: 100%;
-    /* full width */
     height: 50vh;
-    /* height of carousel */
     min-height: 250px;
     margin-right: 10px;
-    //align-items: flex-end;
+    background-position: bottom;
+    background-size: cover;
+    align-items: flex-end;
 }
 
-.carousel-cell img {
-	width: 100%;
-  	display: block;
-  	height: auto;
+.container {
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @media screen and ( min-width: 768px ) {
