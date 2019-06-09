@@ -1,5 +1,5 @@
 # individual-project
 https://paulinastefanska.github.io/js-plugins <br>
-JS plugins: <br>
-- Flickity - carousel <br><br>
-Used technologies: HTML, CSS/SASS, JavaScript, RWD, Flexbox, NPM.
+Used technologies: HTML, CSS/SASS, JavaScript, RWD, Flexbox, NPM. <br>
+Used JS plugins: <br>
+- Flickity - carousel <br>
