@@ -1,19 +1,23 @@
-var carousel = document.querySelector('.carousel');
+var carousel = document.querySelector('.main-carousel');
 var flkty = new Flickity( carousel, {
-  imagesLoaded: true,
-  percentPosition: false,
+//options
+  cellAlign: "left",
+  contain: true,
+  pageDots: false, // remove page dots
+  hash: true // change page url after slide change
 });
 
-var imgs = carousel.querySelectorAll('.carousel-cell');
-// get transform property
-var docStyle = document.documentElement.style;
-var transformProp = typeof docStyle.transform == 'string' ?
-  'transform' : 'WebkitTransform';
-
-flkty.on( 'scroll', function() {
-  flkty.slides.forEach( function( slide, i ) {
-    var img = imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
-    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+// Restart button - return to first slide
+document
+  .querySelector(".restart-button")
+  .addEventListener("click", function() {
+    flkty.selectCell(".start");
   });
+
+// Progress bar below carousel   
+var progressBar = document.querySelector(".progress-bar");
+
+flkty.on("scroll", function(progress) {
+  progress = Math.max(0, Math.min(1, progress));
+  progressBar.style.width = progress * 100 + "%";
 });
