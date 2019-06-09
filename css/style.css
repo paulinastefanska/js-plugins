@@ -2,10 +2,12 @@
 
 body { font-family: sans-serif; }
 
+.container { position: relative; bottom: 50px; width: 100%; max-width: 1200px; margin: 0 auto; }
+
 .carousel { background: #EEE; }
 
-.carousel-cell { margin-right: 20px; overflow: hidden; }
+.carousel-cell { display: flex; width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; margin-right: 10px; }
 
-.carousel-cell img { display: block; height: 200px; }
+.carousel-cell img { width: 100%; display: block; height: auto; }
 
 @media screen and (min-width: 768px) { .carousel-cell img { height: 400px; } }
