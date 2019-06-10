@@ -68,6 +68,10 @@ html { overflow-y: scroll; }
 	    weight: bold;
 	    size: 15px;
 	}
+  @media(max-width: 767px) {
+    top: 20px;
+    right: 15px;
+  }
 }
 
 .progress-bar {

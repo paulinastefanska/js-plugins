@@ -20,6 +20,8 @@ html { overflow-y: scroll; }
 
 .button { position: absolute; z-index: 1; top: 30px; right: 40px; cursor: pointer; outline: none; height: 30px; width: 120px; border: 4px solid #ffa502; border-radius: 15px; background: #ffa502; color: #fff; font-family: "Lato", sans-serif; font-weight: bold; font-size: 15px; }
 
+@media (max-width: 767px) { .button { top: 20px; right: 15px; } }
+
 .progress-bar { width: 0; height: 20px; background: #ffa502; }
 
 .google-map { width: 100%; height: 50vh; background-color: grey; }
