@@ -10,7 +10,11 @@ html { overflow-y: scroll; }
 
 .carousel-cell-text { font-size: 40px; font-weight: 700; color: #fff; text-shadow: 1px 1px 3px #000; }
 
+@media (max-width: 767px) { .carousel-cell-text { margin-left: 15px; font-size: 30px; } }
+
 .carousel-cell p { font-size: 18px; font-weight: 500; color: #fff; text-shadow: 1px 1px 1px #000; }
+
+@media (max-width: 767px) { .carousel-cell p { margin-left: 15px; font-size: 16px; } }
 
 .container { position: relative; bottom: 50px; width: 100%; max-width: 1200px; margin: 0 auto; }
 
@@ -19,7 +23,3 @@ html { overflow-y: scroll; }
 .progress-bar { width: 0; height: 20px; background: #ffa502; }
 
 .google-map { width: 100%; height: 50vh; background-color: grey; }
-
-@media (max-width: 767px) { .carousel-cell { height: 400px; }
-  .carousel-cell-text { margin-left: 10px; font-size: 30px; }
-  .carousel-cell p { font-size: 16px; } }
