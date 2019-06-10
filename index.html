@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>js plugins</title>
 		<link rel="stylesheet" href="vendor/normalize.css">
@@ -58,41 +59,13 @@
 	    <!-- progress bar -->
 	    <div class="progress-bar"></div>
 		
-
-
-		<!--<button type="button" class="button restart-button">Restart</button>
-		<div class="main-carousel">
-			<div class="carousel-cell start" id="seychelles" style="background-image:url(images/seychelles.jpg)">
-	        	<div class="container">
-	          		<p class="carousel-cell-text">Seychelles</p>
-	        	</div>
-      		</div>
-			<div class="carousel-cell" id="philippines" style="background-image:url(images/philippines.jpg)">
-	        	<div class="container">
-	          		<p class="carousel-cell-text">Philippines</p>
-	        	</div>
-      		</div>
-      		<div class="carousel-cell" id="french-polynesia" style="background-image:url(images/french-polynesia.jpg)">
-	        	<div class="container">
-	          		<p class="carousel-cell-text">French Polynesia</p>
-	        	</div>
-      		</div>
-      		<div class="carousel-cell" id="singapore" style="background-image:url(images/singapore.jpg)">
-	        	<div class="container">
-	          		<p class="carousel-cell-text">Singapore</p>
-	        	</div>
-      		</div>
-      		<div class="carousel-cell" id="australia" style="background-image:url(images/australia.jpg)">
-	        	<div class="container">
-	          		<p class="carousel-cell-text">Australia</p>
-	        	</div>
-      		</div>
-		</div>
-		<div class="progress-bar"></div>-->
+		<!-- google maps -->
+		<div id="map" class="google-map"></div>
 
 	<script src="vendor/flickity.pkgd.min.js"></script>
 	<script src="vendor/hash.js"></script>
 	<script src="vendor/mustache.js"></script>
-	<script src="js/script.js"></script>	
+	<script src="js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPaZyCqQ9zxMsSbf4SR7BBzHB3QtmkIWI&callback=initMap"></script>	
 	</body>
 </html>

@@ -6,7 +6,7 @@ html { overflow-y: scroll; }
 
 .carousel { background: #EEE; }
 
-.carousel-cell { display: flex; align-items: flex-end; width: 100%; height: 60vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
+.carousel-cell { display: flex; align-items: flex-end; width: 100%; height: 50vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
 
 .carousel-cell-text { font-size: 40px; font-weight: 700; color: #fff; text-shadow: 1px 1px 3px #000; }
 
@@ -17,5 +17,7 @@ html { overflow-y: scroll; }
 .button { position: absolute; z-index: 1; top: 30px; right: 40px; cursor: pointer; outline: none; height: 30px; width: 120px; border: 4px solid #ffa502; border-radius: 15px; background: #ffa502; color: #fff; font-family: "Lato", sans-serif; font-weight: bold; font-size: 15px; }
 
 .progress-bar { width: 0; height: 20px; background: #ffa502; }
+
+.google-map { width: 100%; height: 50vh; background-color: grey; }
 
 @media screen and (min-width: 768px) { .carousel-cell img { height: 400px; } }
