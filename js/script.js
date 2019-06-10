@@ -1,4 +1,18 @@
-var carousel = document.querySelector('.main-carousel');
+"use strict";
+
+// mustache
+var templateCarousel = document.getElementById("carousel-template").innerHTML;
+var carousel = document.querySelector(".main-carousel");
+var carouselElements = "";
+
+for ( var i = 0; i < slideData.length; i++) {
+  carouselElements += Mustache.render(templateCarousel, slideData[i]);
+}
+
+carousel.innerHTML = carouselElements;
+
+
+// flickity carousel
 var flkty = new Flickity( carousel, {
 //options
   cellAlign: "left",
@@ -8,9 +22,7 @@ var flkty = new Flickity( carousel, {
 });
 
 // Restart button - return to first slide
-document
-  .querySelector(".restart-button")
-  .addEventListener("click", function() {
+document.querySelector(".restart-button").addEventListener("click", function() {
     flkty.selectCell(".start");
   });
 
