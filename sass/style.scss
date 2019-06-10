@@ -74,7 +74,7 @@ html { overflow-y: scroll; }
   background-color: grey;
 }
 
-@media screen and ( min-width: 768px ) {
+@media(max-width: 767px) {
   .carousel-cell {
     height: 400px;
     &-text {
