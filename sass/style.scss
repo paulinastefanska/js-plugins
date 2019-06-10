@@ -24,9 +24,14 @@ html { overflow-y: scroll; }
 		font-size: 40px;
 		font-weight: 700;
 		color: #fff;
-		margin: 0 15px;
 		text-shadow: 1px 1px 3px #000;
 	}
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
 }
 
 .container {
