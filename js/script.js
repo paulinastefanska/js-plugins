@@ -21,12 +21,14 @@ var flkty = new Flickity( carousel, {
   hash: true // change page url after slide change
 });
 
-// Restart button - return to first slide
-document.querySelector(".restart-button").addEventListener("click", function() {
-    flkty.selectCell(".start");
-  });
+// restart button
+var restart = document.querySelector(".restart-button");
 
-// Progress bar below carousel   
+restart.addEventListener("click", function () {
+  flkty.select(0);
+});
+
+// progress bar
 var progressBar = document.querySelector(".progress-bar");
 
 flkty.on("scroll", function(progress) {
