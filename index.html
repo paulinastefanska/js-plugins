@@ -16,6 +16,12 @@
 
 		<!-- flickity carousel -->
 	    <div class="main-carousel"></div>
+		
+		<!-- progress bar -->
+	    <div class="progress-bar"></div>
+		
+		<!-- google maps -->
+		<div id="map" class="google-map"></div>
 
 	    <!-- mustache template -->
 	    <script id="carousel-template" type="x-tmpl-mustache">
@@ -26,7 +32,7 @@
 	        </div>
 	      </div>
 	    </script>
-	    <script>
+	    <!--<script>
 	      var slideData = [
 	        {
 	          image: "images/seychelles.jpg",
@@ -59,17 +65,12 @@
 	          coords: {lat: -25.036283, lng: 134.338180}
 	        },
 	      ]
-	    </script>
-
-	    <!-- progress bar -->
-	    <div class="progress-bar"></div>
-		
-		<!-- google maps -->
-		<div id="map" class="google-map"></div>
+	    </script>-->
 
 	<script src="vendor/flickity.pkgd.min.js"></script>
 	<script src="vendor/hash.js"></script>
 	<script src="vendor/mustache.js"></script>
+	<script src="js/slideData.js"></script>
 	<script src="js/script.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl0jtBPkQbgwE_0CREdOQ2a6g-IUVck1E&callback=initMap"></script>	
 	</body>
